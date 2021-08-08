@@ -1,20 +1,49 @@
 /*font-family: 'Fira Mono', monospace;-->
 <--font-family: 'Scheherazade', serif;*/
 * {
-  background-color: #14213d;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   text-decoration: none;
 }
 
+.big-image {
+  background: url(Images/hero-backround.jpg);
+  min-height: 380px;
+  height: 100vh;
+  width: 100vw;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  /* Needed to position the navbar */
+  position: relative;
+}
+.overlay {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.title {
+  color: white;
+  display: flex;
+  align-items: left;
+  justify-content: center;
+  flex-direction: column;
+  font-size: 50px;
+  position: absolute;
+  left: 300px;
+  top: 200px;
+  font-family: "Fira Mono", monospace;
+}
 /*Navigation Bar desktop view*/
 nav {
   display: flex;
   justify-content: space-around;
   align-items: center;
   min-height: 8vh;
-  background-color: #14213d;
   font-family: "Fira Mono", monospace;
 }
 
@@ -71,7 +100,7 @@ nav {
     right: 0px;
     height: 92vh;
     top: 8vh;
-    background-color: #14213d;
+    <--background-color: #14213d;
     display: flex;
     flex-direction: column;
     align-items: center;
