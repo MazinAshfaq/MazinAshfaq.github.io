@@ -1,0 +1,79 @@
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #24252a;
+  font-family: "Poppins", sans-serif;
+}
+
+section {
+  height: 100vh;
+  width: 100vw;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+
+.LandingPage {
+  background: linear-gradient(rgba(34, 38, 41, 0.8), rgba(34, 38, 41, 0.8)),
+    url("LPBackgroundResized.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+nav li,
+a {
+  font-weight: 600;
+  font-size: 25px;
+  color: #f2f2f2;
+  text-decoration: none;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 3%;
+}
+
+.GIT {
+  color: #86c232;
+  transition: all 0.5s ease 0s;
+  padding: 30px 3%;
+}
+.GIT:hover {
+  color: #f2f2f2;
+}
+
+.nav-links {
+  list-style: none;
+}
+
+.nav-links li {
+  display: inline-block;
+  padding: 0px 20px;
+}
+
+.nav-links li a {
+  transition: all 0.3s ease 0s;
+}
+
+.nav-links li a:hover {
+  color: #86c232;
+}
+
+.LandingPage h1 {
+  text-align: center;
+  padding: 275px;
+  font-weight: 600;
+  font-size: 45px;
+  color: #f2f2f2;
+}
+
+.JSD {
+  font-weight: 100;
+  font-size: 35px;
+}
