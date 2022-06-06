@@ -30,56 +30,88 @@
         </nav>
         <a href="#git" class="GIT"> Get in Touch / > </a>
       </header>
-      <h1>
+      <h1 class="text-center">
         Mazin Ashfaq <br />
         <span class="JSD">Junior Software Developer</span>
       </h1>
     </section>
 
-    <section class="AboutMe" id="about">
-      <div class="about-div">
-        <img class="about-img" src="assets/images/Desk.png" />
-        <div class="about-txt">
-          <h2>About Me</h2>
-          <h4>Full Stack Developer</h4>
-          <p>
-            I am a Full-Stack Developer leaning more on the front end side.
-            Recent grad fron Portland State University. Currently working as a
-            software engineer at a company in Portland. I like Full-Stack and
-            Web Development because I like the imidiate visual result of my
-            work. The stack I mainly work with is PERN. Although I do have
-            experience in other languages like Python, C++, Java among others.
-            Technologies I have used include <ul class="about-list"><li>GCP</li><li>SSMS</li><li>Docker</li><li>AWS</li></ul>
-          </p>
-          <button type="button" class="button-3">Let's Talk</button>
-        </div>
-      </div>
-    </section>
-
-    <section class="Projects" id="projects">
-      <h2 class="projects-title">Some projects Projects</h2>
-      <div class="container">
-      <div class="row">
-        <div class="col-sm-6">
-          <div class="card">
-            <h5 class="card-title">CryptoDash</h5>
-            <h6 class="card-subtitle mb-2 text-muted">A React App</h6>
-            <p class="card-text">Fetches data using axios and displays current crypto prices using chart.js.</p>
-            <a href="https://github.com/MazinAshfaq/CryptoDash" target="_blank" class="card-link"><i class = "bi bi-github"></i></a>
-            <a href="https://cryptodasham21.herokuapp.com/" target="_blank" class="card-link"><i class="bi bi-arrow-up-right"></i></a>
+    <section class="aboutMe" id="about">
+      <div class="card aboutMeCard m-5 d-flex align-items-center justify-content-center container-fluid" >
+        <div class="row g-0">
+          <div class="col-md-6 container-fluid">
+            <img src="assets/images/Desk.png" class="img-fluid rounded-start" alt="Me at a my Desk!" style="width:80%;
+            height:auto;">
           </div>
-        </div>
-          <div class="col-sm-6">
-            <div class="card">
-              <h5 class="card-title">Class Review</h5>
-              <h6 class="card-subtitle mb-2 text-muted">Full-Stack GCP App</h6>
-              <p class="card-text">This project is hosted on Google Cloud with continues diploment using docker.</p>
-              <a href="https://github.com/MazinAshfaq/ClassReviewApp" target="_blank" class="card-link"><i class = "bi bi-github"></i></a>
-              <a href="https://class-review-oqmnsdcfha-uw.a.run.app/" target="_blank" class="card-link"><i class="bi bi-arrow-up-right"></i></a>
+          <div class="col-md-6 d-flex align-items-center justify-content-center">
+            <div class="card-body about-txt">
+              <h2 class="card-title">About Me</h2>
+              <h5 class="card-subtitle">Full Stack Developer</h4>
+              <p class="card-text">
+                I am a Full-Stack Developer leaning more on the front end side.
+                Recent graduate from Portland State University. Currently working as a
+                software engineer at a company in Portland. I like Full-Stack and
+                Web Development because I like the imidiate visual result of my
+                work. The stack I mainly work with is PERN. Although I do have
+                experience in other languages like Python, C++, Java among others.
+              </p>
+              <button type="button" class="button-3">Let's Talk</button>
             </div>
           </div>
         </div>
       </div>
+    </section>
+
+    <section class="projects d-flex flex-column align-items-center justify-content-center" id="projects">
+      <h2 class="projects-title">My Projects</h2>
+      <div class="container">
+      <div class="row g-5">
+        <div class="col-sm-6">
+          <div class="card">
+            <h2 class="card-title">CryptoDash</h5>
+            <h5 class="card-subtitle mb-2 text-muted">A React App</h6>
+            <p class="card-text">Fetches data using axios and displays current crypto prices using chart.js.</p>
+            <div class = "project-links">
+            <a href="https://github.com/MazinAshfaq/CryptoDash" target="_blank" class="card-link"><i class = "bi bi-github"></i></a>
+            <a href="https://cryptodasham21.herokuapp.com/" target="_blank" class="card-link"><i class="bi bi-arrow-up-right"></i></a>
+          </div>
+          </div>
+        </div>
+          <div class="col-sm-6">
+            <div class="card">
+              <h2 class="card-title">Class Review</h5>
+              <h5 class="card-subtitle mb-2 text-muted">Full-Stack GCP App</h6>
+              <p class="card-text">This project is hosted on Google Cloud with continues diploment using docker.</p>
+              <div class = "project-links">
+                <a href="https://github.com/MazinAshfaq/ClassReviewApp" target="_blank" class="card-link"><i class = "bi bi-github"></i></a>
+                <a href="https://class-review-oqmnsdcfha-uw.a.run.app/" target="_blank" class="card-link"><i class="bi bi-arrow-up-right"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="card">
+              <h2 class="card-title">WonderTix</h5>
+              <h5 class="card-subtitle mb-2 text-muted">CRM WebApp</h6>
+              <p class="card-text">PERN Stack App for Senior where I implemented Authorization</p>
+              <div class = "project-links">
+                <a href="https://github.com/MazinAshfaq/ClassReviewApp" target="_blank" class="card-link"><i class="bi bi-github"></i></a>
+                <a href="https://class-review-oqmnsdcfha-uw.a.run.app/" target="_blank" class="card-link"><i class="bi bi-arrow-up-right"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="card">
+              <h2 class="card-title">MangoDev</h5>
+              <h4 class="card-subtitle mb-2 text-muted">Wordpress</h6>
+              <p class="card-text">MangoDev is a alias for freelance WebDev.</p>
+              <div class = "project-links">
+                <a href="https://MangoDev.xyz" target="_blank" class="card-link"><i class="bi bi-arrow-up-right"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
     </div>
     </section>
     <section class="skills" id="skills">
@@ -145,7 +177,8 @@
         </div>
       </div>
     </section>
-    <section class="Experience" id="experience"></section>
+    <section class="experience" id="experience">
+    </section>
     <section class="Contact" id="git"></section>
     <script src="script.js"></script>
   </body>
