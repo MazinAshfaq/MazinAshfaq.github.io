@@ -69,11 +69,68 @@ header {
   text-align: center;
   padding: 275px;
   font-weight: 600;
-  font-size: 45px;
+  font-size: 40px;
   color: #f2f2f2;
 }
 
 .JSD {
   font-weight: 100;
   font-size: 35px;
+}
+
+/*About section Styling*/
+.AboutMe {
+  display: flex;
+  background-color: #474b4f;
+}
+
+.about-div {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+}
+.about-img {
+  width: 50%;
+  margin: 30px;
+}
+
+.about-txt {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  color: #f2f2f2;
+}
+.about-txt h2 {
+  font-size: 60px;
+  margin: 0;
+}
+.about-txt h4 {
+  font-size: 30px;
+  color: #86c232;
+  margin: 0;
+}
+.about-txt p {
+  width: 70%;
+  font-size: 25px;
+  align-items: center;
+}
+.about-list {
+  color: #86c232;
+  font-size: 25px;
+  list-style: none;
+}
+.button-3 {
+  width: 150px;
+  background-color: #2ea44f;
+  border: 1px solid rgba(32, 35, 38, 0.15);
+  border-radius: 6px;
+  box-shadow: rgba(29, 31, 33, 0.1) 0 1px 0;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 20px;
+  padding: 6px 16px;
 }
