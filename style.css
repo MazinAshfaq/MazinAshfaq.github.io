@@ -12,13 +12,14 @@ section {
   min-height: 100vh;
   width: 100vw;
 }
+
 ::-webkit-scrollbar {
   display: none;
 }
 
 .LandingPage {
   background: linear-gradient(rgba(34, 38, 41, 0.8), rgba(34, 38, 41, 0.8)),
-    url("LPBackgroundResized.jpg");
+    url("assets/images/LPBackgroundResized.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -30,7 +31,6 @@ a {
   font-weight: 600;
   font-size: 25px;
   color: #f2f2f2;
-  text-decoration: none;
 }
 
 header {
@@ -44,6 +44,7 @@ header {
   color: #86c232;
   transition: all 0.5s ease 0s;
   padding: 30px 3%;
+  text-decoration: none;
 }
 .GIT:hover {
   color: #f2f2f2;
@@ -60,6 +61,8 @@ header {
 
 .nav-links li a {
   transition: all 0.3s ease 0s;
+  text-decoration: none;
+  color: inherit;
 }
 
 .nav-links li a:hover {
@@ -172,50 +175,9 @@ header {
 }
 
 /* Project Styles */
-.projects {
-  background-color: var(--bg-color);
-  padding: 32px 0;
-  margin-top: 2rem;
-}
-
-.project-picture {
-  width: 65%;
-  height: 60%;
-}
-
-.projects-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
 .projects-title {
-  text-align: center;
-  margin-bottom: 1rem;
+  align-items: center;
 }
-
-.project-container {
-  text-align: center;
-  width: 21.875rem;
-  padding: 1rem;
-}
-
-.project-container p {
-  padding: 0.4rem;
-}
-
-.project-title {
-  margin-bottom: var(--bottom-margin);
-}
-
-.project-details {
-  margin-bottom: var(--bottom-margin);
-}
-
-.project-card {
-  background-color: #fff;
-  border-radius: 11px;
-  box-shadow: 0 3px 10px var(--primary-shadow);
-  padding: 20px;
-  margin: 10px;
+.card {
+  padding: 5px;
 }
