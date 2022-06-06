@@ -9,7 +9,7 @@ body {
 }
 
 section {
-  height: 100vh;
+  min-height: 100vh;
   width: 100vw;
 }
 ::-webkit-scrollbar {
@@ -24,6 +24,7 @@ section {
   background-position: center center;
 }
 
+/* Navigation Styling */
 nav li,
 a {
   font-weight: 600;
@@ -121,7 +122,7 @@ header {
 }
 .button-3 {
   width: 150px;
-  background-color: #2ea44f;
+  background-color: #86c232;
   border: 1px solid rgba(32, 35, 38, 0.15);
   border-radius: 6px;
   box-shadow: rgba(29, 31, 33, 0.1) 0 1px 0;
@@ -133,4 +134,88 @@ header {
   font-weight: 600;
   line-height: 20px;
   padding: 6px 16px;
+}
+
+/* Skills styling */
+
+.skills {
+  background-color: #f2f2f2;
+  margin: auto;
+  text-align: center;
+}
+
+.skills-header {
+  color: #86c232;
+  padding: 50px;
+}
+
+.skills-container img {
+  padding: 30px;
+}
+
+.icon {
+  width: 11.875rem;
+  height: 11.25rem;
+}
+
+.icon-card {
+  background-color: #fff;
+  border-radius: 11px;
+  box-shadow: 0 3px 10px var(--secondary-shadow);
+  padding: 20px;
+  margin: 10px;
+  transition: all 0.2s ease-in-out;
+}
+
+.icon-card:hover {
+  transform: scale(1.1);
+}
+
+/* Project Styles */
+.projects {
+  background-color: var(--bg-color);
+  padding: 32px 0;
+  margin-top: 2rem;
+}
+
+.project-picture {
+  width: 65%;
+  height: 60%;
+}
+
+.projects-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.projects-title {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.project-container {
+  text-align: center;
+  width: 21.875rem;
+  padding: 1rem;
+}
+
+.project-container p {
+  padding: 0.4rem;
+}
+
+.project-title {
+  margin-bottom: var(--bottom-margin);
+}
+
+.project-details {
+  margin-bottom: var(--bottom-margin);
+}
+
+.project-card {
+  background-color: #fff;
+  border-radius: 11px;
+  box-shadow: 0 3px 10px var(--primary-shadow);
+  padding: 20px;
+  margin: 10px;
 }
