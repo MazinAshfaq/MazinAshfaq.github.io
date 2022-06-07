@@ -132,6 +132,21 @@ nav li a {
   color: #86c232;
   margin: 0;
 }
+
+.socials {
+  font-size: 50px;
+  margin-left: -15px;
+  color: #f2f2f2;
+}
+.socials a {
+  list-style: none;
+  padding-left: 15px;
+  padding-right: 15px;
+  color: inherit;
+}
+.socials a:hover {
+  color: #86c232;
+}
 /* .about-txt p {
   font-size: 1.5rem;
   align-items: center;

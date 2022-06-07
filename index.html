@@ -29,7 +29,7 @@
             <li>
               <a href="#experience"> Experience </a>
             </li>
-            <li id="git"> <a href="#git" class="git"> Get in Touch / > </a></li>
+            <li id="git"> <a href="#contact" class="git"> Get in Touch / > </a></li>
           </ul>
         </nav>
       <h1 class="text-center">
@@ -38,6 +38,7 @@
       </h1>
     </section>
 
+    <!--- About Me Section --->
     <section class="aboutMe" id="about">
       <div class="card aboutMeCard m-5 d-flex align-items-center justify-content-center container-fluid" >
         <div class="row g-0">
@@ -58,16 +59,24 @@
                 experience in other languages like Python, C++, Java among others.
               </p>
               <button type="button" class="button-3">Let's Talk</button>
+              <div class ="socials"><a class="links" target="_blank" href="https://github.com/MazinAshfaq"
+                ><i class="bi bi-github"></i
+              ></a>
+              <a class="links" href="https://www.linkedin.com/in/mazinashfaq/" target="_blank"
+                ><i class="bi bi-linkedin"></i
+              ></a></div>
+              
             </div>
           </div>
         </div>
       </div>
     </section>
-
+    <!--- Projects Section --->
     <section class="projects d-flex flex-column align-items-center justify-content-center" id="projects">
       <h2 class="projects-title">My Projects</h2>
       <div class="container">
       <div class="row g-5">
+        <!--- Project 1 --->
         <div class="col-sm-6">
           <div class="card">
             <h2 class="card-title">CryptoDash</h5>
@@ -79,6 +88,7 @@
           </div>
           </div>
         </div>
+        <!--- Project 2 --->
           <div class="col-sm-6">
             <div class="card">
               <h2 class="card-title">Class Review</h5>
@@ -90,6 +100,7 @@
               </div>
             </div>
           </div>
+          <!--- Project 3 --->
           <div class="col-sm-6">
             <div class="card">
               <h2 class="card-title">WonderTix</h5>
@@ -101,6 +112,7 @@
               </div>
             </div>
           </div>
+          <!--- Project 4 --->
           <div class="col-sm-6">
             <div class="card">
               <h2 class="card-title">MangoDev</h5>
@@ -116,11 +128,13 @@
       
     </div>
     </section>
+    <!--- Skills Section --->
     <section class="skills" id="skills">
       <h2 class="skills-header">My Top Skills</h2>
 
       <div class="skills-container">
-        <div class="first-set animate__animated animate__pulse">
+        <div class="first-set">
+          <!--- Skll Icons --->
           <img
             src="assets/icons/icons8-html-5.svg"
             alt=""
@@ -141,7 +155,8 @@
           />
         </div>
 
-        <div class="second-set animate__animated animate__pulse">
+        <div class="second-set">
+          <!--- Skll Icons --->
           <img
             src="assets/icons/icons8-react-native.svg"
             alt=""
@@ -162,7 +177,8 @@
           />
 
         </div>
-        <div class="second-set animate__animated animate__pulse">
+        <div class="third-set">
+          <!--- Skll Icons --->
           <img
             src="assets/icons/python.png"
             alt=""
@@ -179,6 +195,7 @@
         </div>
       </div>
     </section>
+    <!--- My Resume --->
     <section class="experience" id="experience">
       <div class="container-fluid" style="width: 40%">
         <img src="assets/images/MazinAshfaq_Resume.jpg"
@@ -187,30 +204,31 @@
             class="resume"/>
       </div>
     </section>
-    <section class="contact container d-flex flex-column align-items-center justify-content-center" id="git">
+    <!--- Contact Form --->
+    <section class="contact container d-flex flex-column align-items-center justify-content-center" id="contact">
       <h2 class = "contact-title"> Get in Touch!</h2>
       <div class="container py-4">
         <form id="contactForm" action="https://formsubmit.co/b9d616e85cd6827df4d013dbff103904" method="POST" >
-
+        <!---  Name --->
           <div class="mb-3">
             <label class="form-label" for="name">Name</label>
             <input class="form-control" id="name" type="text" name="name" placeholder="Name" data-sb-validations="required" />
             <div class="invalid-feedback" data-sb-feedback="name:required">Name is required.</div>
           </div>
-      
+          <!--- Email ---> 
           <div class="mb-3">
             <label class="form-label" for="emailAddress">Email Address</label>
             <input class="form-control" id="emailAddress" type="email" name="email" placeholder="Email Address" data-sb-validations="required, email" />
             <div class="invalid-feedback" data-sb-feedback="emailAddress:required">Email Address is required.</div>
             <div class="invalid-feedback" data-sb-feedback="emailAddress:email">Email Address Email is not valid.</div>
           </div>
-    
+          <!--- Message --->
           <div class="mb-3">
             <label class="form-label" for="message">Message</label>
             <textarea class="form-control" id="message" type="text" placeholder="Message" style="height: 10rem;" data-sb-validations="required"></textarea>
             <div class="invalid-feedback" data-sb-feedback="message:required">Message is required.</div>
           </div>
-      
+          <!--- Submit Messages--->
           <div class="d-none" id="submitSuccessMessage">
             <div class="text-center mb-3">Form submission successful!</div>
           </div>
@@ -218,6 +236,7 @@
           <div class="d-none" id="submitErrorMessage">
             <div class="text-center text-danger mb-3">Error sending message!</div>
           </div>
+
           <!-- Form submit button -->
           <div class="d-grid">
             <button class="btn btn-primary btn-lg green-button" type="submit">Submit</button>
@@ -228,6 +247,7 @@
       
       </div>
     </section>
+    <!--- Footer--->
     <div class="footer">
       <span> 2022 All rights reserved ©
         Built and Designed by
