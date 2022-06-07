@@ -55,10 +55,7 @@ nav li a {
   padding: 30px 3%;
 } */
 
-#git {
-  right: 0;
-}
-.GIT {
+.git {
   color: #86c232 !important;
   font-weight: 600;
   font-size: 25px;
@@ -234,7 +231,7 @@ nav li a {
   align-items: center;
   justify-content: center;
 }
-.resume {
+.experience img {
   height: 85vh;
   width: auto;
   margin: 30px;
