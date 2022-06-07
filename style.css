@@ -214,3 +214,36 @@ header {
 .card-subtitle.mb-2.text-muted {
   color: #86c232 !important;
 }
+
+/* Experience Styling*/
+.experience {
+  background-color: #474b4f;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.resume {
+  height: 85vh;
+  width: auto;
+  margin: 30px;
+  transition: all 0.2s ease-in-out;
+}
+
+.resume:hover {
+  transform: scale(1.07);
+}
+
+/* Contact Styling*/
+
+.contact.container {
+  background-color: #3f5a36;
+  margin-top: 70px;
+  margin-bottom: 70px;
+  border-radius: 20px;
+}
+
+.contact-title {
+  padding: 30px;
+  text-align: center;
+  color: #86c232;
+}
