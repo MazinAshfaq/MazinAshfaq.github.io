@@ -37,7 +37,7 @@ section {
 /* Navigation Styling */
 nav {
   position: fixed;
-  width: 100%;
+  width: 100vw;
   z-index: 100;
   padding: 25px;
 }
@@ -45,12 +45,26 @@ nav li {
   font-weight: 600;
   font-size: 25px;
   color: #f2f2f2;
+  padding: 0px 20px;
 }
 
 nav li a {
   font-weight: 600;
   font-size: 25px;
   color: #f2f2f2;
+  transition: all 0.3s ease 0s;
+  text-decoration: none;
+  color: inherit;
+}
+
+nav li a:hover {
+  color: #86c232;
+}
+
+.nav-links {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
 }
 
 #git {
@@ -66,41 +80,82 @@ nav li a {
   color: #f2f2f2 !important;
 }
 
-.nav-links {
-  display: flex;
-  flex-direction: row;
-  list-style: none;
+.toggle-button {
+  position: absolute;
+  top: 0.75rem;
+  right: 1rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 21px;
+  width: 30px;
 }
 
-.nav-links li {
-  padding: 0px 20px;
-}
-
-.nav-links li a {
-  transition: all 0.3s ease 0s;
-  text-decoration: none;
-  color: inherit;
-}
-
-.nav-links li a:hover {
-  color: #86c232;
+.toggle-button .bar {
+  z-index: 100;
+  height: 3px;
+  width: 100%;
+  background-color: white !important;
+  border-radius: 10px;
 }
 
 .LandingPage h1 {
   padding: 275px;
   font-weight: 600;
-  font-size: 40px;
+  font-size: 55px;
   color: #f2f2f2;
   align-items: center;
   margin: auto;
   padding: auto;
 }
-
 .JSD {
   font-weight: 100;
-  font-size: 35px;
+  font-size: 40px;
 }
+@media (max-width: 800px) {
+  .toggle-button {
+    display: flex;
+  }
 
+  .nav-links {
+    flex-direction: column;
+    align-items: flex-start;
+    display: none;
+    width: 100%;
+  }
+
+  .nav-links ul {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .nav-links ul li {
+    text-align: center;
+  }
+
+  .nav-links ul li a {
+    padding: 0.5rem 1rem;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  #git {
+    color: #86c232 !important;
+    font-weight: 600;
+    font-size: 25px;
+    transition: all 0.5s ease 0s;
+    text-decoration: none;
+  }
+  .LandingPage h1 {
+    font-size: 25px;
+    margin-left: -126px;
+  }
+  .JSD {
+    font-size: 20px;
+  }
+}
 /*About section Styling*/
 .aboutMe {
   display: flex;
@@ -246,14 +301,21 @@ nav li a {
   justify-content: center;
 }
 .experience img {
-  height: 85vh;
-  width: auto;
+  max-width: 100%;
+  height: auto;
+  width: auto\9;
   margin: 30px;
   transition: all 0.2s ease-in-out;
 }
 
 .resume:hover {
   transform: scale(1.07);
+}
+
+@media (max-width: 800px) {
+  .experience img {
+    margin: 40px;
+  }
 }
 
 /* Contact Styling*/
